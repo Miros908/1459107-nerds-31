@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Roboto";
+    
+
+    src: 
+    url(".../fonts/roboto.woff2") format("woff2"),
+    url(".../fonts/roboto.woff") format("woff");
+    font-weight: 400;
+    font-style:normal;
+    
+}
+
+:root {
+    --basic-black: #000000;
+    --basic-extra-dark: #242424;
+    --basic-green: #00CA74;
+    --special-green:#00BC6C;
+    --dark-green:#00AA62;
+    --basic-silver: #EEEEEE;
+    --basic-white: #FFFFFF;
+  
+    --basic-red: #FB565A;
+    --special-red:#E74246;
+    --dark-red:#D7373B;
+    --basic-yellow:#EFC849;
+    --special-yellow:#EAB534;
+    --dark-yellow:#E5A722;
+  }
+
+
+
+
+.page-body{
+    min-width:960px;
+    margin:0;
+    padding:0;
+    background-color: var(--basic-white);
+    font-family:"Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height:24px;
+    color:#000000;
+
+}
+.main-header{
+ background-color:var(--basic-silver);   
+}
+.site-navigation,.basket-list{
+list-style:none;
+font-weight:500;
+
+
+}
+.nav-item{
+text-decoration:none;
+color:var(--basic-black);
+line-height:30px;
+font-weight:500;
+
+}
+.nav-item:hover{
+color:var(--basik-red);    
+}
+.nav-item:focus{
+ opacity:30%;
+ color:var(--basic-black);
+}
+.princip-par{
+font-size:55px;
+line-height:55px;    
+
+}
+.button{
+ background-color: var(--basic-red);
+ text-decoration:none;
+ color:var(--basic-white);
+ line-height:18px;
+
+}
+.button:hover{
+ background-color: var(--special-red);   
+ 
+}
+
+.button:focus{
+background-color: var(--dark-red);    
+opacity:30%;
+}
+
+.service-list{
+ list-style:none;   
+}
+.button-2{
+    background-color:var(--basic-green);
+    text-decoration:none;
+    color:#FFFFFF;
+    line-height:18px;
+   
+   }
+   .button-2:hover{
+    background-color:var(--special-green);   
+    
+   }
+   
+   .button-2:focus{
+   background-color: var(--dark-green);    
+   opacity:30%;
+   }
+   .button-3{
+    background-color:var(--basic-yellow);
+    text-decoration:none;
+    color:#FFFFFF;
+    line-height:18px;
+   
+   }
+   .button-3:hover{
+    background-color:var(--special-yellow);   
+    
+   }
+   
+   .button-3:focus{
+   background-color: var(--dark-yellow);    
+   opacity:30%;
+   }
+
+
+   .advant-par{
+   font-size:45px;
+   line-height:45px;    
+   }  
+
+   .indic-row{
+    font-size:45px;   
+   }
+   .procent{
+     font-size:26px;  
+   }
+
+   .indic-row-2{
+line-height:16px;
+   }
+   .footer-head{
+   font-size:18px;    
+   line-height: 30px;
+   }
+   .footer-head-2{
+   line-height:18px;    
+   }
+
+   .social-par{
+    font-size:36px;
+    line-height:36px;   
+   }
