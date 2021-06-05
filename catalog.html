@@ -9,32 +9,34 @@
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="applefavicon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a><img src="img/logo/nerds-logo.svg" width="150" height="100" alt="логотип"></a></li>
-                <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a> </li>
-                <li><a href="#">Контакты</a></li>
+<body class="page-body">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <ul class="site-navigation">
+                <li><a class="nav-item" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65"
+                            alt="логотип"></a></li>
+                <li><a class="nav-item" href="#">Студия</a></li>
+                <li><a class="nav-item" href="#">Клиенты</a></li>
+                <li><a class="nav-item active" href="catalog.html">Магазин</a></li>
+                <li><a class="nav-item" href="#">Контакты</a></li>
             </ul>
-            <ul>
+            <ul class="basket-list">
 
-                <li><a href="#">Корзина</a></li>
+                <li><a class="nav-item" href="#">Корзина</a></li>
             </ul>
         </nav>
         <h1>Магазин готовых шаблонов</h1>
     </header>
     <main>
         <h1>Готовые шаблоны</h1>
-        <section>
+        <section class="filter">
             <h2>Фильтр шаблонов</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
-                <fieldset>
-                    <legend>Стоимость:</legend>
+                <fieldset class="price">
+                    <legend class="field-head">Стоимость:</legend>
                     <p> <label for="cost-slider">Cost-slider</label>
                         <input type="range" name="cost" id="cost-slider" min="0" max="15000">
                     </p>
@@ -45,9 +47,9 @@
                         <input type="number" name="price-max" id="to-price" placeholder="15000">
                     </p>
                 </fieldset>
-                <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul>
+                <fieldset class="grid">
+                    <legend class="field-head">Сетка:</legend>
+                    <ul class="field-list">
                         <li>
                             <input type="radio" name="adaptive" id="adaptive-button" checked>
                             <label for="adaptive-button">Адаптивная</label>
@@ -64,9 +66,9 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>Особенности:</legend>
-                    <ul>
+                <fieldset class="specialties">
+                    <legend class="field-head">Особенности:</legend>
+                    <ul class="field-list">
                         <li><input type="checkbox" name="Slider" id="slider-1" checked>
                             <label for="slider-1">Слайдер</label>
                         </li>
@@ -84,82 +86,95 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <a class="button-4" href="#">Показать</a>
             </form>
         </section>
         <section>
             <h2>Сортировка</h2>
             <p>Сортировать:</p>
-            <ul>
-                <li><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По названию</a></li>
+            <ul class="sort-list">
+                <li><a class="sort-item selected" href="#">По цене</a></li>
+                <li><a class="sort-item"  href="#">По типу</a></li>
+                <li><a class="sort-item"  href="#">По названию</a></li>
             </ul>
-            <a href="#">вверх</a>
-            <a href="#">вниз</a>
-            <ul>
-                <li>
-                    <img src="https://via.placeholder.com" width="150" height="100" alt="">
+            <a class="sort-item" href="#">вверх</a>
+            <a class="sort-item" href="#">вниз</a>
+            <ul class="cards">
+                <li class="cards-item">
+                    <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-sedona1.jpg" width="359" height="578" alt="sedona">
-                    <h3>Sedona</h3>
-                    <p>Информационный сайт<br>для туристов</p>
-                    <button type="button">9 900 ₽</button>
+                    <div class="descript">
+                    <h3 class="cards-head">Sedona</h3>
+                    <p class="cards-descrpit">Информационный сайт<br>для туристов</p>
+                    <button class="price-button" type="button">9 900 ₽</button>
+                    </div>
                 </li>
-                <li>
-                    <img src="https://via.placeholder.com" width="150" height="100" alt>
+                <li  class="cards-item">
+                    <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-pink1.jpg" width="359" height="578" alt="pink app">
-                    <h3>Pink App</h3>
-                    <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-                    <button type="button">9 900 ₽</button>
+                    <div class="descript">
+                    <h3 class="cards-head">Pink App</h3>
+                    <p  class="cards-descrpit">Продуктовый лендинг<br>приложения для iOS и Android</p>
+                    <button class="price-button" type="button">9 900 ₽</button>
+                    </div>
                 </li>
-                <li>
-                    <img src="https://via.placeholder.com" width="150" height="100" alt>
+                <li  class="cards-item">
+                    <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-barbershop1.jpg" width="359" height="578" alt="borodinski">
-                    <h3>Barbershop</h3>
-                    <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-                    <button type="button">9 900 ₽</button>
+                    <div class="descript">
+                    <h3 class="cards-head">Barbershop</h3>
+                    <p  class="cards-descrpit">Сайт салона красоты.<br>Для мужчин, да.</p>
+                    <button class="price-button" type="button">9 900 ₽</button>
+                    </div>
 
 
                 </li>
-                <li>
-                    <img src="https://via.placeholder.com" width="150" height="100" alt="">
+                <li  class="cards-item">
+                    <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-mishka1.jpg" width="359" height="578" alt="mishka">
-                    <h3>MISHKA</h3>
-                    <p>Интернет-магазин <br>вязаных игрушек</p>
-                    <button type="button">9 900 ₽</button>
+                    <div class="descript">
+                    <h3 class="cards-head">MISHKA</h3>
+                    <p  class="cards-descrpit">Интернет-магазин <br>вязаных игрушек</p>
+                    <button class="price-button" type="button">9 900 ₽</button>
+                    </div>
 
                 </li>
-                <li>
-                    <img src="https://via.placeholder.com" width="150" height="100" alt="">
+                <li  class="cards-item">
+                    <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-aplus1.jpg" width="359" height="578" alt="A+">
-                    <h3>A Plus</h3>
-                    <p>Лендинг курсов повышения квалификации</p>
-                    <button type="button">9 900 ₽</button>
+                    <div class="descript">
+                    <h3 class="cards-head">A Plus</h3>
+                    <p  class="cards-descrpit">Лендинг курсов повышения квалификации</p>
+                    <button class="price-button" type="button">9 900 ₽</button>
+                    </div>
 
                 </li>
-                <li>
-                    <img src="https://via.placeholder.com" width="150" height="100" alt="">
+                <li  class="cards-item">
+                    <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-kvast1.jpg" width="359" height="578" alt="Kvast">
-                    <h3>КВАСТ</h3>
-                    <p>Промо-сайт производителя<br>крафтового кваса</p>
-                    <button type="button">9 900 ₽</button>
+                    <div class="descript">
+                    <h3 class="cards-head">КВАСТ</h3>
+                    <p  class="cards-descrpit">Промо-сайт производителя<br>крафтового кваса</p>
+                    <button class="price-button" type="button">9 900 ₽</button>
+                    </div>
                 </li>
 
 
             </ul>
-            <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-            </ul>
-            <a href="#">Следующая</a>
+            <ul class="page-number">
+                <li><a class="number active-page" href="#"><span class="num">1</span></a></li>
+                <li><a class="number" href="#"><span class="num">2</span></a></li>
+                <li><a class="number" href="#"><span class="num">3</span></a></li>
+            
+                <li><a class="number" href="#">Следующая</a></li>
+                </ul>
         </section>
 
 
 
     </main>
-    <footer>
-        <section>
+    <footer class="main-footer">
+        <section class="footer-contacts">
             <h2>Как добраться</h2>
             <p>NЁRDS DESIGN STUDIO</p>
             <p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p>
@@ -170,7 +185,7 @@
 
 
 
-        <section>
+        <section class="social">
             <h2>Ссылки на социальные сети</h2>
             <a href="#"><img src="https://via.placeholder.com" width="150" height="100" alt="vkontakte"></a>
             <a href="#"><img src="https://via.placeholder.com" width="150" height="100" alt="facebook"></a>
