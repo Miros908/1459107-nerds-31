@@ -42,9 +42,9 @@
 }
 
 .page-body {
-  min-width: 960px;
-  margin: 0;
-  padding: 0;
+  display:grid;
+  grid-template-rows:min-content 1fr min-content;
+
   background-color: var(--basic-white);
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -52,20 +52,50 @@
   color: #000000;
   font-weight: 400;
 }
+.social-1{
+ display:grid;
+grid-template-columns: 1fr 1fr;
+}
+.project-list{
+ display:grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ list-style:none; 
+}
 
+.footer-contacts{
+display:grid;
+grid-template-columns: 1fr min-content;  
+}
+.main-navigation{
+ display:grid; 
+ grid-template-columns: min-content 1fr min-content;
+}
 .main-header {
   background-color: var(--basic-silver);
 }
 
-.site-navigation, .basket-list {
+.site-navigation, .basket-list, .logo {
   list-style: none;
+  
+  padding:0;
+  margin:0;
 }
 
+.principles-container{
+ display:grid;
+ grid-template-columns: 1fr min-content;
+}
+.service-list{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+
+}
 .nav-item {
   text-decoration: none;
   color: var(--basic-black);
   line-height: 30px;
   font-weight: 500;
+  margin: 75px 45px 9px 45px 
 }
 
 .nav-item:hover {
@@ -83,6 +113,7 @@
 .princip-par {
   font-size: 55px;
   line-height: 55px;
+  font-weight:500;
 }
 
 .button {
@@ -172,6 +203,10 @@ opacity:30%;
 .advant-par {
   font-size: 45px;
   line-height: 45px;
+}
+.advantages{
+ display:grid;
+ grid-template-columns:1fr 1fr; 
 }
 
 .indic-row {
