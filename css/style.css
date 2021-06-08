@@ -69,6 +69,14 @@ grid-template-columns: 1fr min-content;
 .main-navigation{
  display:grid; 
  grid-template-columns: min-content 1fr min-content;
+ 
+ 
+ 
+}
+.containers{
+ width:1440px;
+ margin:0 auto; 
+ outline:2px solid red;
 }
 .main-header {
   background-color: var(--basic-silver);
@@ -206,7 +214,7 @@ opacity:30%;
 }
 .advantages{
  display:grid;
- grid-template-columns:1fr 1fr; 
+ grid-template-columns:1fr min-content; 
 }
 
 .indic-row {
