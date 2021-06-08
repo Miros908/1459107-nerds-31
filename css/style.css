@@ -62,17 +62,31 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
 }
-
+.map{
+ background-image:url(../img/map/map1.png);
+ background-repeat:no-repeat;
+ background-position: center;
+ outline: 2px solid red;
+ background-size:100%
+ 
+}
 .footer-contacts {
   display: grid;
   grid-template-columns: 1fr min-content;
 }
 
-.main-navigation {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
+.main-navigation,.principles,.slide{
+ outline:2px solid red; 
 }
 
+.main-navigation{
+ display:grid;
+ grid-template-columns:min-content 1fr min-content ; 
+}
+.princip{
+ display:grid;
+ grid-template-columns:1fr min-content ; 
+}
 .containers {
   width: 1440px;
   margin: 0 auto;
@@ -212,6 +226,7 @@
 .advant-par {
   font-size: 45px;
   line-height: 45px;
+  font-weight:500;
 }
 
 .advantages {
