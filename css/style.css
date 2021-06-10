@@ -58,8 +58,8 @@
 }
 
 .project-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display:flex;
+  flex-direction:space-around;
   list-style: none;
 }
 
@@ -95,6 +95,8 @@
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
+  margin-top:75px;
+  align-items:center;
 }
 
 .cards {
@@ -123,12 +125,26 @@
 .containers {
   width: 1160px;
   margin: 0 auto;
+  padding:0 20px;
+  outline:2px solid red;
+  
 }
+
+
+
+
 
 .main-header {
   background-color: var(--basic-silver);
 }
-
+.site-navigation{
+display:flex;  
+justify-content: space-between;
+}
+.service-list{
+margin:0;
+padding:0;  
+}
 .site-navigation, .basket-list, .logo {
   list-style: none;
   padding: 0;
@@ -141,8 +157,8 @@
 }
 
 .service-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display:flex;
+  justify-content:space-between;
 }
 
 .nav-item {
