@@ -14,10 +14,11 @@
 
 <body class="page-body">
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation containers">
+            <a class="logo" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65"
+                    alt="логотип"></a>
             <ul class="site-navigation">
-                <li><a class="nav-item" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65"
-                            alt="логотип"></a></li>
+
                 <li><a class="nav-item" href="#">Студия</a></li>
                 <li><a class="nav-item" href="#">Клиенты</a></li>
                 <li><a class="nav-item active" href="catalog.html">Магазин</a></li>
@@ -28,9 +29,12 @@
                 <li><a class="nav-item" href="#">Корзина</a></li>
             </ul>
         </nav>
-        <h1>Магазин готовых шаблонов</h1>
+        <h1 class="header-h1">Магазин готовых шаблонов</h1>
+ 
     </header>
     <main>
+        <div class="main-grid containers">
+        <div class="filters">
         <h1>Готовые шаблоны</h1>
         <section class="filter">
             <h2>Фильтр шаблонов</h2>
@@ -89,73 +93,79 @@
                 <a class="button-4" href="#">Показать</a>
             </form>
         </section>
-        <section>
+        </div>
+        <div class="sort">
+        <section class="card-sort">
+            
             <h2>Сортировка</h2>
             <p>Сортировать:</p>
             <ul class="sort-list">
                 <li><a class="sort-item selected" href="#">По цене</a></li>
-                <li><a class="sort-item"  href="#">По типу</a></li>
-                <li><a class="sort-item"  href="#">По названию</a></li>
+                <li><a class="sort-item" href="#">По типу</a></li>
+                <li><a class="sort-item" href="#">По названию</a></li>
             </ul>
+            
+            
             <a class="sort-item" href="#">вверх</a>
             <a class="sort-item" href="#">вниз</a>
+            
             <ul class="cards">
                 <li class="cards-item">
                     <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-sedona1.jpg" width="359" height="578" alt="sedona">
                     <div class="descript">
-                    <h3 class="cards-head">Sedona</h3>
-                    <p class="cards-descrpit">Информационный сайт<br>для туристов</p>
-                    <button class="price-button" type="button">9 900 ₽</button>
+                        <h3 class="cards-head">Sedona</h3>
+                        <p class="cards-descrpit">Информационный сайт<br>для туристов</p>
+                        <button class="price-button" type="button">9 900 ₽</button>
                     </div>
                 </li>
-                <li  class="cards-item">
+                <li class="cards-item">
                     <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-pink1.jpg" width="359" height="578" alt="pink app">
                     <div class="descript">
-                    <h3 class="cards-head">Pink App</h3>
-                    <p  class="cards-descrpit">Продуктовый лендинг<br>приложения для iOS и Android</p>
-                    <button class="price-button" type="button">9 900 ₽</button>
+                        <h3 class="cards-head">Pink App</h3>
+                        <p class="cards-descrpit">Продуктовый лендинг<br>приложения для iOS и Android</p>
+                        <button class="price-button" type="button">9 900 ₽</button>
                     </div>
                 </li>
-                <li  class="cards-item">
+                <li class="cards-item">
                     <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-barbershop1.jpg" width="359" height="578" alt="borodinski">
                     <div class="descript">
-                    <h3 class="cards-head">Barbershop</h3>
-                    <p  class="cards-descrpit">Сайт салона красоты.<br>Для мужчин, да.</p>
-                    <button class="price-button" type="button">9 900 ₽</button>
+                        <h3 class="cards-head">Barbershop</h3>
+                        <p class="cards-descrpit">Сайт салона красоты.<br>Для мужчин, да.</p>
+                        <button class="price-button" type="button">9 900 ₽</button>
                     </div>
 
 
                 </li>
-                <li  class="cards-item">
+                <li class="cards-item">
                     <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-mishka1.jpg" width="359" height="578" alt="mishka">
                     <div class="descript">
-                    <h3 class="cards-head">MISHKA</h3>
-                    <p  class="cards-descrpit">Интернет-магазин <br>вязаных игрушек</p>
-                    <button class="price-button" type="button">9 900 ₽</button>
+                        <h3 class="cards-head">MISHKA</h3>
+                        <p class="cards-descrpit">Интернет-магазин <br>вязаных игрушек</p>
+                        <button class="price-button" type="button">9 900 ₽</button>
                     </div>
 
                 </li>
-                <li  class="cards-item">
+                <li class="cards-item">
                     <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-aplus1.jpg" width="359" height="578" alt="A+">
                     <div class="descript">
-                    <h3 class="cards-head">A Plus</h3>
-                    <p  class="cards-descrpit">Лендинг курсов повышения квалификации</p>
-                    <button class="price-button" type="button">9 900 ₽</button>
+                        <h3 class="cards-head">A Plus</h3>
+                        <p class="cards-descrpit">Лендинг курсов повышения квалификации</p>
+                        <button class="price-button" type="button">9 900 ₽</button>
                     </div>
 
                 </li>
-                <li  class="cards-item">
+                <li class="cards-item">
                     <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                     <img src="img/catalog/img-kvast1.jpg" width="359" height="578" alt="Kvast">
                     <div class="descript">
-                    <h3 class="cards-head">КВАСТ</h3>
-                    <p  class="cards-descrpit">Промо-сайт производителя<br>крафтового кваса</p>
-                    <button class="price-button" type="button">9 900 ₽</button>
+                        <h3 class="cards-head">КВАСТ</h3>
+                        <p class="cards-descrpit">Промо-сайт производителя<br>крафтового кваса</p>
+                        <button class="price-button" type="button">9 900 ₽</button>
                     </div>
                 </li>
 
@@ -165,16 +175,17 @@
                 <li><a class="number active-page" href="#"><span class="num">1</span></a></li>
                 <li><a class="number" href="#"><span class="num">2</span></a></li>
                 <li><a class="number" href="#"><span class="num">3</span></a></li>
-            
+
                 <li><a class="number" href="#">Следующая</a></li>
-                </ul>
+            </ul>
         </section>
-
-
+</div>
+</div>
 
     </main>
     <footer class="main-footer">
-        <section class="footer-contacts">
+        <div class="map">
+        <section class="footer-contacts containers">
             <h2>Как добраться</h2>
             <p>NЁRDS DESIGN STUDIO</p>
             <p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p>
@@ -182,17 +193,19 @@
             <a href="#">Напишите нам</a>
             <img src="img/map/map-marker1.png" width="150" height="100" alt="nerds">
         </section>
+</div>
 
-
-
+<div class="social-1 containers">
         <section class="social">
             <h2>Ссылки на социальные сети</h2>
             <a href="#"><img src="https://via.placeholder.com" width="150" height="100" alt="vkontakte"></a>
             <a href="#"><img src="https://via.placeholder.com" width="150" height="100" alt="facebook"></a>
             <a href="#"><img src="https://via.placeholder.com" width="150" height="100" alt="instagram"></a>
         </section>
-        <p>Давайте дружить, это выгодно!</p>
+        <div class="sale">
+        <p class="motivation">Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-
+        </div>
+</div>
     </footer>
 </body>
