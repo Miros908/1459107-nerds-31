@@ -327,9 +327,9 @@
     width: min-content;
     margin: 0;
     padding: 0;
-    position: absolute;
-    left: 1150px;
-    top: 431px;
+    position: relative;
+    left: 900px;
+    bottom: 120px;
 }
 
 .button-slide {
