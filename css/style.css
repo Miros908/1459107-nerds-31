@@ -41,6 +41,7 @@
     --gray86: #DBDBDB;
     --stock-grey: #D7DCDE;
     --new-grey: #444444;
+    --gray: #C1C1C1;
 }
 
 .page-body {
@@ -64,10 +65,37 @@
     justify-content: space-around;
     list-style: none;
     margin: 0;
-    margin-top: 138px;
     height: 182px;
-    align-items: center;
-    margin-bottom: 80px;
+    border-bottom: 2px solid var(--basic-silver);
+    border-top: 2px solid var(--basic-silver);
+    margin-bottom: 86px;
+}
+
+.project-items::before {
+    content: "";
+    height: 52px;
+    width: 2px;
+    background-color: var(--basic-silver);
+    display: block;
+    position: relative;
+    right: 40px;
+    top: 60px;
+}
+
+.project-items-1 {
+    margin: auto 0;
+}
+
+.basket-item::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon/cart-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 25px;
+    bottom: 1px;
 }
 
 .map {
@@ -321,6 +349,15 @@
     text-transform: uppercase;
 }
 
+.service {
+    border-bottom: 2px solid var(--basic-silver);
+    padding-bottom: 80px;
+}
+
+.advant {
+    padding-top: 73px;
+}
+
 .slide-button {
     list-style: none;
     display: flex;
@@ -330,13 +367,7 @@
     position: relative;
     left: 900px;
     bottom: 120px;
-}
-
-.button-slide {
-    border: none;
-    padding: 0;
-    margin-right: 17px;
-    background-color: inherit;
+    align-items: flex-end;
 }
 
 .princip-par {
@@ -353,18 +384,27 @@
     display: none;
 }
 
+.button-slide {
+    border: none;
+    background-color: inherit;
+}
+
+.service-items2::before {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: var(--basic-red);
+    position: relative;
+    right: 37px;
+    top: 12px;
+}
+
 .head-service {
     display: none;
 }
 
 .head-princip {
-    display: none;
-}
-
-.principles-2,
-.principles-3,
-.slide-2,
-.slide-3 {
     display: none;
 }
 
@@ -520,7 +560,6 @@
     line-height: 45px;
     font-weight: 500;
     margin: 0;
-    margin-top: 155px;
 }
 
 .advant-par-2 {
@@ -543,10 +582,15 @@
 .advantages {
     display: grid;
     grid-template-columns: 1fr min-content;
+    padding-bottom: 73px;
+}
+
+.logo:focus {
+    opacity: 30%;
 }
 
 .statistic {
-    margin-top: 121px;
+    padding-top: 39px;
 }
 
 .stat-par {
@@ -772,6 +816,19 @@
     margin-bottom: 37px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .popup {
     width: 960px;
     height: 590px;
@@ -780,9 +837,9 @@
 .button-close {
     border: none;
     background-color: inherit;
-    position: absolute;
-    top: 2560px;
-    left: 850px;
+    position: relative;
+    left: 750px;
+    bottom: 60px;
 }
 
 .appointment-item {
