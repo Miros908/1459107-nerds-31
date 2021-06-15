@@ -249,49 +249,29 @@
         margin-bottom: 68px;
     }
     
-    .social-link-2 {
+    .social-link {
         margin-right: 9px;
         width: 81px;
         height: 81px;
         background-color: var(--basic-silver);
         border-radius: 50%;
-        background-image: url(../img/icon/vk.svg);
-        background-repeat: no-repeat;
-        background-position: center;
     }
     
-    .social-link-1 {
-        margin-right: 9px;
-        width: 81px;
-        height: 81px;
-        background-color: var(--basic-silver);
-        border-radius: 50%;
-        background-image: url(../img/icon/fb.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    .social-link-3 {
-        margin-right: 9px;
-        width: 81px;
-        height: 81px;
-        background-color: var(--basic-silver);
-        border-radius: 50%;
-        background-image: url(../img/icon/insta.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    .social-link-1:hover,
-    .social-link-2:hover,
-    .social-link-3:hover {
+    .social-link:hover {
         background-color: var(--special-red)
     }
     
-    .social-link-1:focus,
-    .social-link-2:focus,
-    .social-link-3:focus {
+    .social-link:focus {
         background-color: var(--dark-red);
+    }
+    
+    .icon-svg {
+        position: relative;
+        top: 30px;
+    }
+    
+    .social-link:focus .icon-svg path {
+        opacity: 30%;
     }
     
     .cards {
