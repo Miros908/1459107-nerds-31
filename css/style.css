@@ -249,8 +249,49 @@
         margin-bottom: 68px;
     }
     
-    .social-link {
+    .social-link-2 {
         margin-right: 9px;
+        width: 81px;
+        height: 81px;
+        background-color: var(--basic-silver);
+        border-radius: 50%;
+        background-image: url(../img/icon/vk.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .social-link-1 {
+        margin-right: 9px;
+        width: 81px;
+        height: 81px;
+        background-color: var(--basic-silver);
+        border-radius: 50%;
+        background-image: url(../img/icon/fb.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .social-link-3 {
+        margin-right: 9px;
+        width: 81px;
+        height: 81px;
+        background-color: var(--basic-silver);
+        border-radius: 50%;
+        background-image: url(../img/icon/insta.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .social-link-1:hover,
+    .social-link-2:hover,
+    .social-link-3:hover {
+        background-color: var(--special-red)
+    }
+    
+    .social-link-1:focus,
+    .social-link-2:focus,
+    .social-link-3:focus {
+        background-color: var(--dark-red);
     }
     
     .cards {
@@ -372,14 +413,13 @@
     
     .slide-button {
         list-style: none;
-        display: flex;
         width: min-content;
         margin: 0;
         padding: 0;
         position: relative;
-        left: 900px;
+        left: 905px;
         bottom: 120px;
-        align-items: flex-end;
+        display: flex;
     }
     
     .princip-par {
@@ -398,7 +438,25 @@
     
     .button-slide {
         border: none;
+        background-color: var(--basic-white);
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        margin-right: 17px;
+        padding-top: 2px;
+    }
+    
+    .current::after {
+        content: "";
+        display: block;
         background-color: inherit;
+        width: 4px;
+        height: 4px;
+        position: relative;
+        bottom: 19px;
+        left: 5px;
+        border-radius: 50%;
+        border: 2px solid var(--gray);
     }
     
     .service-items2::before {
