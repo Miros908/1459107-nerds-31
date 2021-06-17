@@ -14,20 +14,26 @@
 
 <body class="page-body">
     <header class="main-header">
-        <nav class="main-navigation containers">
-            <a class="logo" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="логотип"></a>
-            <ul class="site-navigation">
+        <div class="containers">
+            <nav class="main-navigation ">
 
-                <li><a class="nav-item" href="#">Студия</a></li>
-                <li><a class="nav-item" href="#">Клиенты</a></li>
-                <li><a class="nav-item active" href="catalog.html">Магазин</a></li>
-                <li><a class="nav-item" href="#">Контакты</a></li>
-            </ul>
-            <ul class="basket-list">
+                <a class="logo" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="логотип"></a>
+                <ul class="site-navigation">
+                    <li><a class="nav-item" href="#">Студия</a></li>
+                    <li><a class="nav-item" href="#">Клиенты</a></li>
+                    <li><a class="nav-item select" href="catalog.html">Магазин</a></li>
+                    <li><a class="nav-item" href="#">Контакты</a></li>
+                </ul>
+                <ul class="basket-list">
 
-                <li><a class="basket-item" href="#">Корзина</a></li>
-            </ul>
-        </nav>
+                    <li>
+                        <a class="basket-item " href="#"><span class="basket">Корзина</span></a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
         <h1 class="header-h1">Магазин готовых шаблонов</h1>
 
     </header>
@@ -40,31 +46,43 @@
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <fieldset class="price">
                             <legend class="field-head">Стоимость:</legend>
-                            <p> <label for="cost-slider">Cost-slider</label>
-                                <input type="range" name="cost" id="cost-slider" min="0" max="15000">
-                            </p>
-                            <p><label for="from-price">от</label>
-                                <input type="number" name="price-min" id="from-price" placeholder="0">
-                            </p>
-                            <p><label for="to-price">до</label>
-                                <input type="number" name="price-max" id="to-price" placeholder="15000">
-                            </p>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar" style="width:65%"></div>
+                                    </div>
+
+                                    <div class="toggle toggle-min" tabindex="0" style="left:5%"></div>
+                                    <div class="toggle toggle-max" tabindex="0" style="left:60%"></div>
+                                </div>
+
+
+                            </div>
+                            <div class="price-controls">
+                                <label class="price-label">от<input class="input-price"
+                                        type="number" name="price-min" id="from-price" placeholder="0"></label>
+
+
+                                <label class="price-label">до<input class="input-price" type="number" name="price-max"
+                                        id="to-price" placeholder="15000"></label>
+
+                            </div>
                         </fieldset>
                         <fieldset class="grid">
                             <legend class="field-head">Сетка:</legend>
                             <ul class="field-list">
-                                <li>
-                                    <input type="radio" name="adaptive" id="adaptive-button" checked>
-                                    <label for="adaptive-button">Адаптивная</label>
+                                <li class="grid-item">
+                                    <input class="visually-hidden input-grid" type="radio" name="adaptive" id="adaptive-button" checked>
+                                    <label class="label-grid" for="adaptive-button">Адаптивная</label>
 
 
                                 </li>
-                                <li><input type="radio" name="fix" id="fix-button">
-                                    <label for="fix-button">Фиксированная</label>
+                                <li class="grid-item"><input class="visually-hidden input-grid" type="radio" name="fix" id="fix-button">
+                                    <label class="label-grid" for="fix-button">Фиксированная</label>
 
                                 </li>
-                                <li><input type="radio" name="rubber" id="rubber-button">
-                                    <label for="adaptive-button">Резиновая</label>
+                                <li class="grid-item"><input class="visually-hidden input-grid" type="radio" name="rubber" id="rubber-button">
+                                    <label class="label-grid" for="rubber-button">Резиновая</label>
 
                                 </li>
                             </ul>
@@ -72,19 +90,19 @@
                         <fieldset class="specialties">
                             <legend class="field-head">Особенности:</legend>
                             <ul class="field-list">
-                                <li><input type="checkbox" name="Slider" id="slider-1" checked>
+                                <li class="spec-item"><input class="visually-hidden" type="checkbox" name="Slider" id="slider-1" checked>
                                     <label for="slider-1">Слайдер</label>
                                 </li>
-                                <li><input type="checkbox" name="advantages block" id="advantages-1">
+                                <li class="spec-item"><input class="visually-hidden" type="checkbox" name="advantages block" id="advantages-1">
                                     <label for="advantages-1">Блок преимуществ</label>
                                 </li>
-                                <li><input type="checkbox" name="News" id="news-1" checked>
+                                <li class="spec-item"><input class="visually-hidden" type="checkbox" name="News" id="news-1" checked>
                                     <label for="news-1">Новости</label>
                                 </li>
-                                <li><input type="checkbox" name="gallery" id="gallery-1">
+                                <li class="spec-item"><input class="visually-hidden" type="checkbox" name="gallery" id="gallery-1">
                                     <label for="gallery-1">Галерея</label>
                                 </li>
-                                <li><input type="checkbox" name="Basket" id="basket-1">
+                                <li class="spec-item"><input class="visually-hidden" type="checkbox" name="Basket" id="basket-1">
                                     <label for="basket-1">Корзина</label>
                                 </li>
                             </ul>
@@ -123,7 +141,7 @@
                         <li class="cards-item">
                             <img class="decor" src="img/catalog/browser.png" width="150" height="100" alt="">
                             <img src="img/catalog/img-pink1.jpg" width="359" height="578" alt="pink app">
-                            <div class="descript">
+                            <div class="descript ">
                                 <h3 class="cards-head">Pink App</h3>
                                 <p class="cards-descrpit">Продуктовый лендинг<br>приложения для iOS и Android</p>
                                 <button class="price-button" type="button">9 900 ₽</button>
@@ -207,9 +225,16 @@
             <section class="social ">
                 <h2 class="visually-hidden">Ссылки на социальные сети</h2>
                 <div class="icon-social">
-                    <a class="social-link" href="#"><img src="img/icon/vk-icon.svg" width="81" height="81" alt="vkontakte"></a>
-                    <a class="social-link" href="#"><img src="img/icon/fb-icon.svg" width="81" height="81" alt="facebook"></a>
-                    <a class="social-link" href="#"><img src="img/icon/insta-icon.svg" width="81" height="81" alt="instagram"></a>
+                    <a class="social-link" href="#"><svg class="icon-svg" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
+                        </svg></a>
+                    <a class="social-link" href="#"><svg class="icon-svg" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+                        </svg>
+                        </a>
+                    <a class="social-link" href="#"><svg class="icon-svg" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+                        </svg></a>
                 </div>
             </section>
             <div class="sale">
