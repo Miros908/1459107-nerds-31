@@ -71,20 +71,48 @@
     height: 182px;
     border-bottom: 2px solid var(--basic-silver);
     border-top: 2px solid var(--basic-silver);
-    margin-bottom: 86px;
+    margin-bottom: 79px;
+    margin-top: -22px;
+    position: relative;
 }
 
 .slide-button {
     position: absolute;
-    top: -110px;
-    left: 130px;
+    top: -115px;
+    left: 135px;
 }
 
 .slide {
     position: relative;
 }
 
-.project-items::before {
+.project-items:nth-child(1) {
+    position: absolute;
+    left: 30px;
+    top: 60px
+}
+
+.project-items:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    left: 328px;
+}
+
+.project-items:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 637px
+}
+
+.project-items:nth-child(4) {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+.project-items:nth-child(1)::after,
+.project-items:nth-child(2)::after,
+.project-items:nth-child(3)::after {
     content: "";
     height: 52px;
     width: 2px;
@@ -93,10 +121,7 @@
     position: relative;
     right: 40px;
     top: 60px;
-}
-
-.project-items-1 {
-    margin: auto 0;
+    position: absolute;
 }
 
 .basket-item::before {
@@ -111,13 +136,6 @@
     bottom: 1px;
 }
 
-.map {
-    background-image: url(../img/map/map1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%
-}
-
 .header-h1 {
     text-align: center;
     line-height: 55px;
@@ -128,7 +146,7 @@
 
 .sale {
     text-align: left;
-    padding-left: 139px;
+    padding-left: 132px;
 }
 
 .head-sort {
@@ -183,11 +201,11 @@
 }
 
 .logo-contact {
-    position: relative;
+    position: absolute;
     width: 231px;
     height: 190px;
-    left: 650px;
-    top: 100px;
+    left: 845px;
+    top: 70px;
 }
 
 .info-contact {
@@ -205,6 +223,11 @@
 
 .footer-contacts {
     height: 416px;
+    background-image: url(../img/map/map1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
 }
 
 .contact-head {
@@ -243,6 +266,8 @@
     border: none;
     border-radius: 3px;
     padding: 17px 54px 15px 54px;
+    position: relative;
+    top: 15px;
 }
 
 .button-more:hover {
@@ -337,6 +362,8 @@
 .princip {
     display: grid;
     grid-template-columns: 1fr min-content;
+    position: relative;
+    top: -15px;
 }
 
 .filters {
@@ -349,8 +376,13 @@
     padding: 0 140px;
 }
 
+.main-header-1 {
+    background-color: var(--basic-silver);
+}
+
 .main-header {
     background-color: var(--basic-silver);
+    height: 537px;
 }
 
 .site-navigation {
@@ -371,6 +403,10 @@
     grid-template-columns: 1fr min-content;
 }
 
+.principles-1 {
+    position: relative;
+}
+
 .service-list {
     display: flex;
     margin-top: 80px;
@@ -380,6 +416,10 @@
     margin-right: 100px;
     display: flex;
     flex-direction: column;
+}
+
+.service-items2 {
+    margin-bottom: 22px;
 }
 
 .nav-item {
@@ -408,7 +448,7 @@
 .service-par {
     margin: 0;
     padding: 0;
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 32px;
 }
 
@@ -448,7 +488,7 @@
 }
 
 .princip-par {
-    margin-top: 78px;
+    margin-top: 85px;
     margin-bottom: 25px;
 }
 
@@ -461,15 +501,18 @@
     display: none;
 }
 
+.slide-button li {
+    position: relative;
+}
+
 .button-slide {
     border: none;
     background-color: var(--basic-white);
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    margin-right: 17px;
-    padding-top: 2px;
     position: relative;
+    margin-right: 20px;
 }
 
 .current::after {
@@ -551,6 +594,20 @@
     width: min-content;
     padding: 17px 40px 15px 40px;
     text-transform: uppercase;
+}
+
+.button-write-us {
+    background-color: var(--basic-red);
+    text-decoration: none;
+    color: var(--basic-white);
+    line-height: 18px;
+    border: none;
+    border-radius: 3px;
+    width: min-content;
+    padding: 17px 43px 15px 45px;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
 }
 
 .button:hover {
@@ -643,8 +700,8 @@
 .grid-table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 31px;
-    margin-left: 18px;
+    margin-top: 50px;
+    margin-left: 3px;
 }
 
 .indicators {
@@ -671,19 +728,21 @@
 
 .advant-par-2 {
     margin: 0;
-    margin-top: 32px;
+    margin-top: 35px;
 }
 
 .advant-head-2 {
     margin: 0;
     margin-top: 40px;
     text-transform: uppercase;
+    font-size: 16px;
 }
 
 .service-list2 {
     list-style: none;
     margin: 0;
     margin-top: 23px;
+    margin-left: -5px;
 }
 
 .advantages {
@@ -702,7 +761,8 @@
 
 .stat-par {
     margin: 0;
-    margin-top: 37px;
+    margin-top: 32px;
+    padding-right: 15px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: right;
@@ -721,12 +781,16 @@
     position: relative;
     bottom: 6px;
     font-weight: 700;
+    left: 2px;
 }
 
 .t-number,
 .t-numbers,
 .procent {
     margin: 0;
+    line-height: 20px;
+    margin-left: -3px;
+    margin-top: 2px;
 }
 
 .grid-container {
