@@ -243,11 +243,23 @@
                         
                         .sort-button {
                             margin-right: 0;
+                            background-image: url(../img/icon/up.svg);
+                            background-repeat: no-repeat;
+                            width: 11px;
+                            height: 10px;
+                            display: inline-block;
+                            vertical-align: middle;
                         }
                         
                         .sort-button-1 {
                             margin-right: 15px;
                             margin-left: 2px;
+                            background-image: url(../img/icon/down.svg);
+                            background-repeat: no-repeat;
+                            width: 11px;
+                            height: 10px;
+                            display: inline-block;
+                            vertical-align: middle;
                         }
                         
                         .logo-contact {
@@ -274,6 +286,9 @@
                         .footer-contacts {
                             height: 416px;
                             position: relative;
+                            background-image: url(../img/map/map1.png);
+                            background-position: center;
+                            background-size: 100%;
                         }
                         
                         .contact-head {
@@ -1069,17 +1084,21 @@
                             opacity: 100%;
                         }
                         
-                        .select {
+                        ф .select {
                             border-bottom: 2px solid var(--basic-red);
                             padding-bottom: 20px;
                         }
                         
+                        .cards-item a {
+                            text-decoration: none;
+                        }
+                        
                         .decor {
                             position: relative;
-                            opacity: 12%;
                             width: 360px;
                             height: 40px;
                             top: 5px;
+                            opacity: 12%;
                         }
                         
                         .cards-item:hover .decor {
@@ -1099,6 +1118,7 @@
                             margin-top: 26px;
                             margin-bottom: 12px;
                             word-break: break-all;
+                            color: var(--basic-black);
                         }
                         
                         .cards-descrpit {
@@ -1265,6 +1285,7 @@
                             height: 231px;
                             align-items: center;
                             display: none;
+                            text-align: center;
                         }
                         
                         .page-number {
