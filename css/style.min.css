@@ -249,7 +249,7 @@
 }
 
 .button-sort {
-    margin: 0
+    margin: 0 0 0 21px
 }
 
 .sort-button,
@@ -973,7 +973,7 @@ iframe {
     width: 230;
     height: 72px;
     justify-content: space-between;
-    margin-bottom: 37px;
+    margin-bottom: 51px;
     word-break: break-all;
     line-height: 10px
 }
