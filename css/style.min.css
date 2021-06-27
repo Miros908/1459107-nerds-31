@@ -332,7 +332,7 @@
     border: 0;
     border-radius: 3px;
     padding: 17px 54px 15px;
-    display: inline-block
+    display: block
 }
 
 .button-more:hover {
