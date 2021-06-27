@@ -316,7 +316,8 @@
                             position: relative;
                             top: 15px;
                             margin-bottom: 50px;
-                            display: block;
+                            display: inline-block;
+                            vertical-align: middle;
                         }
                         
                         .button-more-2 {
@@ -327,7 +328,8 @@
                             border: none;
                             border-radius: 3px;
                             padding: 17px 54px 15px 54px;
-                            display: block;
+                            display: inline-block;
+                            vertical-align: middle;
                         }
                         
                         .button-more-3 {
@@ -338,7 +340,8 @@
                             border: none;
                             border-radius: 3px;
                             padding: 17px 54px 15px 54px;
-                            display: block;
+                            display: inline-block;
+                            vertical-align: middle;
                         }
                         
                         .button-more:hover {

@@ -332,7 +332,8 @@
     border: 0;
     border-radius: 3px;
     padding: 17px 54px 15px;
-    display: block
+    display: inline-block;
+    vertical-align: middle
 }
 
 .button-more:hover {
