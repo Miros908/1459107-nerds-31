@@ -170,6 +170,7 @@
                             line-height: 55px;
                             margin-bottom: 108px;
                             font-size: 55px;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 500;
                             word-break: break-all;
                             margin-top: 70px;
@@ -214,6 +215,7 @@
                             margin-right: 240px;
                             text-transform: uppercase;
                             font-weight: 700;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-size: 18px;
                         }
                         
@@ -252,8 +254,8 @@
                             position: absolute;
                             width: 231px;
                             height: 190px;
-                            left: 845px;
-                            top: 70px;
+                            left: 926px;
+                            top: -10px;
                         }
                         
                         .info-contact {
@@ -271,10 +273,6 @@
                         
                         .footer-contacts {
                             height: 416px;
-                            background-image: url(../img/map/map1.png);
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: 100%;
                             position: relative;
                         }
                         
@@ -433,6 +431,7 @@
                         .motivation {
                             font-weight: 700;
                             font-size: 36px;
+                            font-family: "Roboto", Arial, sans-serif;
                         }
                         
                         .princip,
@@ -444,6 +443,10 @@
                             top: -15px;
                         }
                         
+                        .princip-3 {
+                            margin-bottom: 1px;
+                        }
+                        
                         .filters {
                             width: 260px;
                         }
@@ -452,6 +455,13 @@
                             width: 1160px;
                             margin: 0 auto;
                             padding: 0 140px;
+                        }
+                        
+                        .containers-2 {
+                            width: 1160px;
+                            margin: 0 auto;
+                            padding: 0 140px;
+                            margin-bottom: 3px;
                         }
                         
                         .main-header-1 {
@@ -536,6 +546,7 @@
                         }
                         
                         .service-head {
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 700;
                             text-transform: uppercase;
                             font-size: 24px;
@@ -603,6 +614,11 @@
                             position: relative;
                         }
                         
+                        iframe {
+                            margin-left: -141px;
+                            margin-top: -1px;
+                        }
+                        
                         .button-slide {
                             border: none;
                             background-color: var(--basic-white);
@@ -646,6 +662,7 @@
                         }
                         
                         .basket-item {
+                            font-family: "Roboto", Arial, sans-serif;
                             display: flex;
                             align-items: center;
                             text-decoration: none;
@@ -740,7 +757,7 @@
                             text-transform: uppercase;
                             position: relative;
                             font-weight: 500;
-                            font-family: Roboto;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-size: 16px;
                         }
                         
@@ -817,7 +834,7 @@
                             margin-top: 41px;
                             text-transform: uppercase;
                             border: none;
-                            font-family: inherit;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-size: 16px;
                         }
                         
@@ -905,6 +922,7 @@
                             margin: 0;
                             margin-top: 32px;
                             padding-right: 5px;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 700;
                             text-transform: uppercase;
                             text-align: right;
@@ -924,6 +942,7 @@
                             font-size: 26px;
                             position: relative;
                             bottom: 6px;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 700;
                             left: 2px;
                         }
@@ -954,6 +973,7 @@
                         .footer-head {
                             font-size: 18px;
                             line-height: 30px;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 700;
                             margin: 0;
                             margin-bottom: 23px;
@@ -972,6 +992,7 @@
                             line-height: 36px;
                             margin: 0;
                             margin-top: 75px;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 700;
                         }
                         
@@ -982,6 +1003,7 @@
                         
                         .field-head {
                             font-size: 18px;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 700;
                             line-height: 30px;
                             text-transform: uppercase;
@@ -1023,6 +1045,8 @@
                         .number-footer {
                             color: var(--dark-grey);
                             margin: 0;
+                            text-decoration: none;
+                            margin-top: 20px;
                         }
                         
                         .sort-item {
@@ -1064,6 +1088,7 @@
                         }
                         
                         .cards-head {
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 700;
                             text-transform: uppercase;
                             line-height: 30px;
@@ -1187,7 +1212,7 @@
                             border: none;
                             border-radius: 3px;
                             background: var(--basic-silver);
-                            font-family: inherit;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-size: inherit;
                             margin-left: 10px;
                             cursor: pointer;
@@ -1249,6 +1274,7 @@
                         }
                         
                         .number {
+                            font-family: "Roboto", Arial, sans-serif;
                             text-decoration: none;
                             color: var(--basic-black);
                             font-weight: 500;
@@ -1260,6 +1286,7 @@
                         }
                         
                         .number-next {
+                            font-family: "Roboto", Arial, sans-serif;
                             text-decoration: none;
                             color: var(--basic-black);
                             font-weight: 500;
@@ -1315,6 +1342,26 @@
                             overflow: hidden;
                         }
                         
+                        @keyframes bounce {
+                            0% {
+                                transform: translateY(-2000px);
+                            }
+                            70% {
+                                transform: translateY(30px);
+                            }
+                            90% {
+                                transform: translateY(-10px);
+                            }
+                            100% {
+                                transform: translateY(0px);
+                            }
+                        }
+                        
+                        .bounce {
+                            animation-name: bounce;
+                            animation-duration: 0.6s;
+                        }
+                        
                         .popup {
                             width: 960px;
                             height: 590px;
@@ -1334,6 +1381,7 @@
                         }
                         
                         .appointment-item {
+                            font-family: "Roboto", Arial, sans-serif;
                             font-weight: 700;
                         }
                         
@@ -1350,7 +1398,7 @@
                             padding-top: 13px;
                             padding-bottom: 16px;
                             padding-left: 13px;
-                            font-family: Roboto;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-style: normal;
                             font-weight: normal;
                             font-size: 16px;
@@ -1381,7 +1429,7 @@
                         .text-area-popup {
                             width: 760px;
                             height: 97px;
-                            font-family: Roboto;
+                            font-family: "Roboto", Arial, sans-serif;
                             font-style: normal;
                             font-weight: normal;
                             font-size: 16px;
@@ -1397,6 +1445,7 @@
                         }
                         
                         .button-popup {
+                            font-family: "Roboto", Arial, sans-serif;
                             background-color: var(--basic-red);
                             text-decoration: none;
                             color: var(--basic-white);
