@@ -1085,7 +1085,7 @@
                             opacity: 100%;
                         }
                         
-                        ф .select {
+                        .select {
                             border-bottom: 2px solid var(--basic-red);
                             padding-bottom: 20px;
                         }
